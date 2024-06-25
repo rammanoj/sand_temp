@@ -37,7 +37,7 @@ jobs:
 
     - name: Authenticate to Google Cloud
       run: |
-        echo $HOME/gcp-key.json
+        cat $HOME/gcp-key.json
       shell: bash
       # gcloud auth activate-service-account --key-file=$HOME/gcp-key.json
 
