@@ -53,4 +53,5 @@ jobs:
         gcloud compute instance-groups managed rolling-action start-update mlops-group	 \
           --version=template=mlops-template \
           --region=us-east1
+          --zone=us-east1-b
 
