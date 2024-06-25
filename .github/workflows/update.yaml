@@ -52,4 +52,5 @@ jobs:
         MIG_NAME=
         gcloud compute instance-groups managed rolling-action start-update mlops-group-3k4k	 \
           --version=template=mlops-template \
-          --region=us-east1
+          --region=us-east1-b
+
