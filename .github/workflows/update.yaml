@@ -36,7 +36,10 @@ jobs:
       shell: bash
 
     - name: Authenticate to Google Cloud
-      run: gcloud auth activate-service-account --key-file=$HOME/gcp-key.json
+      run: |
+        echo $HOME/gcp-key.json
+      shell: bash
+      # gcloud auth activate-service-account --key-file=$HOME/gcp-key.json
 
     # - name: Update GCP Instance Template
     #   run: |
