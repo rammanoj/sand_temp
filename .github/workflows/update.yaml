@@ -50,6 +50,6 @@ jobs:
     - name: Rolling Update MIG
       run: |
         MIG_NAME=
-        gcloud compute instance-groups managed rolling-action start-update mlops-intance-group-fgd4 \
-          --version=template=mlops-instance-template \
+        gcloud compute instance-groups managed rolling-action start-update mlops-group-3k4k	 \
+          --version=template=mlops-template \
           --region=us-east1
