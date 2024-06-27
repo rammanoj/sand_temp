@@ -54,5 +54,5 @@ jobs:
         INSTANCES=$(gcloud compute instance-groups managed list-instances $INSTANCE_GROUP --zone us-east1-b --format=json | jq -r '.[].instance' | awk -F/ '{print $NF}' | paste -sd "," -)
         echo $INSTANCES
         # Recreate instances using the retrieved names
-        gcloud compute instance-groups managed recreate-instances $INSTANCE_GROUP --instances $INSTANCES 
+        gcloud compute instance-groups managed recreate-instances $INSTANCE_GROUP --instances $INSTANCES --zone us-east1-b
 
